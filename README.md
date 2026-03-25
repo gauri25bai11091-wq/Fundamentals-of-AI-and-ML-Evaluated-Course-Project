@@ -67,6 +67,8 @@ Expense_tracker
 a) Clone the repository
 
 git clone <https://github.com/gauri25bai11091-wq/Fundamentals-of-AI-and-ML-Evaluated-Course-Project>
+
+
 cd <Expense_Tracker>
 
 b) Create virtual environment
@@ -80,7 +82,7 @@ pip install -r requirements.txt
 
 ---
  
-## 7. Streamlit Deployment (Online Demo)>>>>>
+## 7. Live Demo📍
 
 The app is deployed on Streamlit Community Cloud. Access it here:
 
