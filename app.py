@@ -37,7 +37,7 @@ menu = st.sidebar.selectbox("Menu", ["Add Expense", "View Expenses", "Summary","
 
 df = load_data()
 
-# 👇 YAHAN ADD KARO
+
 if df.empty:
     sample_data = pd.DataFrame([
         ["2026-03-20", "Food", 120, "Lunch"],
