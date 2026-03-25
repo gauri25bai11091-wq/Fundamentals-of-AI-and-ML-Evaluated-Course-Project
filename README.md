@@ -1,5 +1,4 @@
-# Fundamentals-of-AI-and-ML-Evaluated-Course-Project
-A Smart Expense Tracker built with Python &amp; Streamlit: manage budgets, visualize spending, and get AI-driven financial tips.
+
 
 # 💸 Smart Expense Tracker
 
@@ -67,7 +66,7 @@ Expense_tracker
 
 a) Clone the repository
 
-git clone <your-repo-link>
+git clone <https://github.com/gauri25bai11091-wq/Fundamentals-of-AI-and-ML-Evaluated-Course-Project>
 cd <Expense_Tracker>
 
 b) Create virtual environment
@@ -129,7 +128,7 @@ Prepared By: Gauri Gupta
 Course: VIT BYOP (Bring Your Own Project)
 
 
-GitHub Repository: >>>>>>>
+GitHub Repository: https://github.com/gauri25bai11091-wq/Fundamentals-of-AI-and-ML-Evaluated-Course-Project
 
 
 Streamlit Deployment: >>>
