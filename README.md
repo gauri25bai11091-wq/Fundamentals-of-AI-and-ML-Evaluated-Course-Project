@@ -44,10 +44,20 @@ This project demonstrates **Python, Streamlit, data analysis, and basic AIML con
 ## 5.📂 Project Structure
 
 Expense_tracker
-├── README.md                # Project overview, setup instructions, usage, deployment link
+
+
+├── README.md               # Project overview, setup instructions, usage, deployment link
+
+
 ├── app.py                   # Main Streamlit app containing all features
+
+
 ├── requirements.txt         # Python dependencies for running the app
+
+
 ├── expenses.csv             # Optional sample CSV data for the app
+
+
 ├── project_report.pdf       # Detailed report for BYOP submission
 
 
