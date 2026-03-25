@@ -86,6 +86,8 @@ pip install -r requirements.txt
 
 The app is deployed on Streamlit Community Cloud. Access it here:
 
+https://fundamentals-of-ai-and-ml-evaluated-course-project-jjzhsxpycny.streamlit.app/
+
 Open Smart Expense Tracker Online
 
 Any updates pushed to GitHub will automatically update the online app.
@@ -133,5 +135,5 @@ Course: VIT BYOP (Bring Your Own Project)
 GitHub Repository: https://github.com/gauri25bai11091-wq/Fundamentals-of-AI-and-ML-Evaluated-Course-Project
 
 
-Streamlit Deployment: >>>
+Streamlit Deployment: https://fundamentals-of-ai-and-ml-evaluated-course-project-jjzhsxpycny.streamlit.app/
 
