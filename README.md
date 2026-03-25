@@ -30,18 +30,6 @@ This project demonstrates **Python, Streamlit, data analysis, and basic AIML con
 
 ---
 
-## 3. Folder Structure
-```text
-Smart-Expense-Tracker/
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── README.md               # This file
-├── expenses.csv            # Optional sample CSV data
-├── project_report.pdf      # Detailed project report (optional)
-
-
-
----
 
 ## 4.🛠️ Tech Stack
 
@@ -61,7 +49,7 @@ Expense_tracker
 ├── requirements.txt         # Python dependencies for running the app
 ├── expenses.csv             # Optional sample CSV data for the app
 ├── project_report.pdf       # Detailed report for BYOP submission
-└── .gitignore               # Optional: files to ignore while committing (e.g., __pycache__)
+
 
 ---
 
@@ -91,7 +79,7 @@ Open Smart Expense Tracker Online
 
 Any updates pushed to GitHub will automatically update the online app.
 
-## Run Locally(optional)
+## Run Locally  (optional)
 
 To run the app locally, open terminal in the project folder and run:
 streamlit run app.py
@@ -99,7 +87,7 @@ streamlit run app.py
 
 ---
 
-8.📊 How to Use
+## 8.📊 How to Use
 
 - Use sidebar to navigate:
   - Add Expense → add new data
@@ -109,14 +97,14 @@ streamlit run app.py
 
 ---
 
-9.📌 Notes
+## 9.📌 Notes
 
 - If no data exists, sample data is automatically loaded
 - Data is stored locally in "expenses.csv"
 
 ---
 
-10.📈 Future Improvements
+## 10.📈 Future Improvements
 
 - User authentication
 - Cloud database integration
@@ -128,8 +116,5 @@ streamlit run app.py
 Prepared By: Gauri Gupta
 Course: VIT BYOP (Bring Your Own Project)
 GitHub Repository: >>>>>>>
-
 Streamlit Deployment: >>>
-├── expenses.csv            # Optional sample CSV data
-├── project_report.pdf      # Detailed project report (optional)
-└── .gitignore              # Files to ignore during Git commits
+
