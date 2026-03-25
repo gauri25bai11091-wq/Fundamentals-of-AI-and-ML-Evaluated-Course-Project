@@ -107,52 +107,53 @@ elif menu == "Summary":
 
         category_summary = df.groupby("Category")["Amount"].sum()
         st.bar_chart(category_summary)
+
         max_exp = df.loc[df["Amount"].idxmax()]
-
         st.warning(f"💸 Highest Expense: ₹{max_exp['Amount']} ({max_exp['Category']})")
-        df["Date"] = pd.to_datetime(df["Date"])
 
+        df["Date"] = pd.to_datetime(df["Date"])
         monthly = df.groupby(df["Date"].dt.month)["Amount"].sum()
 
         st.write("### Monthly Spending")
         st.bar_chart(monthly)
+
         csv = df.to_csv(index=False)
         st.download_button("Download Report", csv, "expenses.csv", "text/csv")
+
         # 🤖 Expense Prediction
-    if len(df) > 2:
-        st.write("### 🤖 Expense Prediction")
+        if len(df) > 2:
+            st.write("### 🤖 Expense Prediction")
 
-        df["Date"] = pd.to_datetime(df["Date"])
-        df["Days"] = (df["Date"] - df["Date"].min()).dt.days
+            df["Days"] = (df["Date"] - df["Date"].min()).dt.days
+            X = df[["Days"]]
+            y = df["Amount"]
 
-        X = df[["Days"]]
-        y = df["Amount"]
+            model = LinearRegression()
+            model.fit(X, y)
 
-        model = LinearRegression()
-        model.fit(X, y)
+            next_day = np.array([[df["Days"].max() + 1]])
+            prediction = model.predict(next_day)
 
-        next_day = np.array([[df["Days"].max() + 1]])
-        prediction = model.predict(next_day)
+            st.success(f"Predicted Next Expense: ₹{prediction[0]:.2f}")
 
-        st.success(f"Predicted Next Expense: ₹{prediction[0]:.2f}")
+        # 🔮 What-If Calculator (INSIDE SUMMARY)
+        st.write("### 🔮 What-If Savings Calculator")
+
+        whatif_amount = st.number_input("Enter amount you want to save daily (₹)", min_value=0.0)
+        period = st.selectbox("Select period", ["Week", "Month", "Year"])
+
+        if st.button("Calculate Savings"):
+            if period == "Week":
+                savings = whatif_amount * 7
+            elif period == "Month":
+                savings = whatif_amount * 30
+            else:
+                savings = whatif_amount * 365
+
+            st.success(f"💰 You can save approximately ₹{savings:.2f} in a {period.lower()}.")
+
     else:
         st.info("No data to summarize")
-        # ----------------- WHAT-IF SCENARIO -----------------
-st.write("### 🔮 What-If Savings Calculator")
-
-# User inputs hypothetical daily/weekly saving
-whatif_amount = st.number_input("Enter amount you want to save daily (₹)", min_value=0.0)
-period = st.selectbox("Select period", ["Week", "Month", "Year"])
-
-if st.button("Calculate Savings"):
-    if period == "Week":
-        savings = whatif_amount * 7
-    elif period == "Month":
-        savings = whatif_amount * 30
-    elif period == "Year":
-        savings = whatif_amount * 365
-
-    st.success(f"💰 You can save approximately ₹{savings:.2f} in a {period.lower()}.")
 #-------------------CHATBOT-------------------------------------   
      
 elif menu == "Chatbot":
