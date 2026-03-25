@@ -153,42 +153,43 @@ if st.button("Calculate Savings"):
         savings = whatif_amount * 365
 
     st.success(f"💰 You can save approximately ₹{savings:.2f} in a {period.lower()}.")
-# #-------------------CHATBOT-------------------------------------   
+#-------------------CHATBOT-------------------------------------   
      
-# elif menu == "Chatbot":
-#     st.subheader("💬 Financial Assistant Bot")
-#     st.info("Try: 'saving tips', 'food expense', 'budget planning'") 
+elif menu == "Chatbot":
+    st.subheader("💬 Financial Assistant Bot")
+    st.info("Try: 'saving tips', 'food expense', 'budget planning'") 
 
-#     user_input = st.text_input("Ask something...")
+    user_input = st.text_input("Ask something...")
 
-#     if user_input:
-#         user_input = user_input.lower()
+    if user_input:
+        user_input = user_input.lower()
 
-#         # 👋 Greetings
-#         if any(word in user_input for word in ["hi", "hello", "hey"]):
-#             st.success("👋 Hello! I'm your finance assistant. How can I help you today?")
+        # 👋 Greetings
+        if any(word in user_input for word in ["hi", "hello", "hey"]):
+            st.success("👋 Hello! I'm your finance assistant. How can I help you today?")
 
-#         elif "how are you" in user_input:
-#             st.success("😊 I'm doing great! Ready to help you manage your expenses.")
+        elif "how are you" in user_input:
+            st.success("😊 I'm doing great! Ready to help you manage your expenses.")
 
-#         elif "your name" in user_input:
-#             st.success("🤖 I'm your Smart Expense Assistant!")
+        elif "your name" in user_input:
+            st.success("🤖 I'm your Smart Expense Assistant!")
 
         
         
 
-#         if "save" in user_input:
-#             st.success("💡 Tip: Try saving at least 20% of your income.")
+        if "save" in user_input:
+            st.success("💡 Tip: Try saving at least 20% of your income.")
 
-#         elif "food" in user_input:
-#             st.success("🍔 Tip: Reduce eating out to save money.")
+        elif "food" in user_input:
+            st.success("🍔 Tip: Reduce eating out to save money.")
 
-#         elif "travel" in user_input:
-#             st.success("🚌 Tip: Use public transport to cut costs.")
+        elif "travel" in user_input:
+            st.success("🚌 Tip: Use public transport to cut costs.")
 
-#         elif "budget" in user_input:
-#             st.success("📊 Tip: Set a monthly budget and track daily expenses.")
+        elif "budget" in user_input:
+            st.success("📊 Tip: Set a monthly budget and track daily expenses.")
 
-#         else:
-#             st.info("🤖 I'm still learning! Try asking about saving, food, travel, or budget.")        
+        else:
+            st.info("🤖 I'm still learning! Try asking about saving, food, travel, or budget.")        
+
 
