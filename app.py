@@ -16,6 +16,7 @@ def load_data():
 # Save data
 def save_data(df):
     df.to_csv(FILE, index=False)
+    
 
 
 st.markdown("<h1 style='text-align:center;'>💸 Smart Expense Tracker</h1>", unsafe_allow_html=True)
