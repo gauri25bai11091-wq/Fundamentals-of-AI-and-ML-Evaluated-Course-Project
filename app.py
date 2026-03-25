@@ -191,3 +191,4 @@ if menu == "Add Expense":
 
 #         else:
 #             st.info("🤖 I'm still learning! Try asking about saving, food, travel, or budget.")        
+
