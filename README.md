@@ -46,19 +46,19 @@ This project demonstrates **Python, Streamlit, data analysis, and basic AIML con
 Expense_tracker
 
 
-├── README.md               # Project overview, setup instructions, usage, deployment link
+├── README.md                  # Project overview, setup instructions, usage, deployment link
 
 
-├── app.py                   # Main Streamlit app containing all features
+├── app.py                      # Main Streamlit app containing all features
 
 
-├── requirements.txt         # Python dependencies for running the app
+├── requirements.txt            # Python dependencies for running the app
 
 
-├── expenses.csv             # Optional sample CSV data for the app
+├── expenses.csv                # Optional sample CSV data for the app
 
 
-├── project_report.pdf       # Detailed report for BYOP submission
+├── project_report.pdf          # Detailed report for BYOP submission
 
 
 ---
@@ -124,7 +124,13 @@ streamlit run app.py
 ---
 
 Prepared By: Gauri Gupta
+
+
 Course: VIT BYOP (Bring Your Own Project)
+
+
 GitHub Repository: >>>>>>>
+
+
 Streamlit Deployment: >>>
 
