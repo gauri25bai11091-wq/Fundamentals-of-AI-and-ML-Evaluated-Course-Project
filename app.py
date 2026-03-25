@@ -66,32 +66,32 @@ if menu == "Add Expense":
         save_data(df)
         st.success("Expense Added Successfully!")
 
-# # ---------------- VIEW EXPENSE ----------------
-# elif menu == "View Expenses":
-#     st.image("https://images.unsplash.com/photo-1556745757-8d76bdb6984b", use_column_width=True)
-#     if st.button("Clear All Data"):
-#         df = df.iloc[0:0]
-#         save_data(df)
-#         st.warning("All data cleared!")
-#     st.subheader("All Expenses")
+# ---------------- VIEW EXPENSE ----------------
+elif menu == "View Expenses":
+    st.image("https://images.unsplash.com/photo-1556745757-8d76bdb6984b", use_column_width=True)
+    if st.button("Clear All Data"):
+        df = df.iloc[0:0]
+        save_data(df)
+        st.warning("All data cleared!")
+    st.subheader("All Expenses")
 
-#     if not df.empty:
-#         search = st.selectbox("Filter by Category", ["All"] + list(df["Category"].unique()))
+    if not df.empty:
+        search = st.selectbox("Filter by Category", ["All"] + list(df["Category"].unique()))
 
-#         if search != "All":
-#             filtered_df = df[df["Category"] == search]
-#         else:
-#             filtered_df = df
+        if search != "All":
+            filtered_df = df[df["Category"] == search]
+        else:
+            filtered_df = df
 
-#         st.dataframe(filtered_df)
-#         st.dataframe(df)
+        st.dataframe(filtered_df)
+        st.dataframe(df)
 
-#         if st.button("Delete Last Entry"):
-#             df = df.iloc[:-1]
-#             save_data(df)
-#             st.warning("Last entry deleted")
-#     else:
-#         st.info("No data available")
+        if st.button("Delete Last Entry"):
+            df = df.iloc[:-1]
+            save_data(df)
+            st.warning("Last entry deleted")
+    else:
+        st.info("No data available")
 
 # # ---------------- SUMMARY ----------------
 # elif menu == "Summary":
