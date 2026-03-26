@@ -88,9 +88,6 @@ The app is deployed on Streamlit Community Cloud. Access it here:
 
 https://fundamentals-of-ai-and-ml-evaluated-course-project-mmetqrkrbrx.streamlit.app/
 
-Open Smart Expense Tracker Online
-
-Any updates pushed to GitHub will automatically update the online app.
 
 ## Run Locally  (optional)
 
