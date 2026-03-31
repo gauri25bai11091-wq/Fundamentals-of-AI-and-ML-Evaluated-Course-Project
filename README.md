@@ -1,6 +1,6 @@
 
 
-# 💸 Smart Expense Tracker
+#  Smart Expense Tracker
 
 ## 1. Project Overview
 The **Smart Expense Tracker** is a Python-based Streamlit application that allows users to **track, analyze, and predict daily expenses**, helping them make smarter financial decisions.  
@@ -30,7 +30,7 @@ This project demonstrates **Python, Streamlit, data analysis, and basic AIML con
 ---
 
 
-## 4.🛠️ Tech Stack
+## 4. Tech Stack
 
 - Python
 - Streamlit
@@ -40,7 +40,7 @@ This project demonstrates **Python, Streamlit, data analysis, and basic AIML con
 
 ---
 
-## 5.📂 Project Structure
+## 5. Project Structure
 
 Expense_tracker
 
@@ -62,7 +62,7 @@ Expense_tracker
 
 ---
 
-## 6.⚙️ Setup Instructions
+## 6. Setup Instructions
 
 a) Clone the repository
 
@@ -97,7 +97,7 @@ streamlit run app.py
 
 ---
 
-## 8.📊 How to Use
+## 8. How to Use
 
 - Use sidebar to navigate:
   - Add Expense → add new data
@@ -107,14 +107,14 @@ streamlit run app.py
 
 ---
 
-## 9.📌 Notes
+## 9. Notes
 
 - If no data exists, sample data is automatically loaded
 - Data is stored locally in "expenses.csv"
 
 ---
 
-## 10.📈 Future Improvements
+## 10. Future Improvements
 
 - User authentication
 - Cloud database integration
